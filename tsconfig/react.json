@@ -3,9 +3,25 @@
   "display": "React Library",
   "extends": "./base.json",
   "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "jsx": "react",
+    "declaration": true,
     "declarationDir": "dist/types",
-    "outDir": "dist"
+    "outDir": "dist",
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
   "exclude": ["node_modules", "dist", "**/*.stories.mdx", "**/*.stories.tsx"]
 }
